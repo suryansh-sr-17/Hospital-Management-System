@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMS-Vitality Vanguard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('assets/background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            opacity: 1;
+        }
+
+        .navbar {
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-overlay {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .h-font {
+            font-family: 'Merienda', cursive;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 20px;
+            max-width: 600px;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #343a40;
+            border-color: #343a40;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #23272b;
+        }
+
+        .btn-primary:focus,
+        .btn-primary.focus {
+            background-color: #23272b;
+            box-shadow: 0 0 0 0.25rem rgba(52, 58, 64, 0.5);
+        }
+
+        .btn-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .textbox {
+            margin-right: 0;
+        }
+
+        .textbox h3,
+        .textbox h4 {
+            margin-bottom: 10px;
+        }
+
+        .circle img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .nav-item {
+                display: inline-block;
+            }
+
+            .navbar-collapse {
+                justify-content: center;
+            }
+
+            .form-overlay {
+                padding: 15px;
+            }
+
+            .btn-container {
+                flex-direction: column;
+                gap: 10px;
+                max-width: 100%;
+            }
+
+            .btn-primary {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index_final.html">HMS-Vitality Vanguard</a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link me-3 active" href="index_final.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#about-us">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#reach-us">Reach Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="btn-wrapper">
+        <div class="btn-container">
+            <a href="/transition.html" class="btn btn-primary">Admin</a>
+            <a href="#" class="btn btn-primary">Patient</a>
+        </div>
+    </div>
+
+    <div id="about-us" class="form-overlay">
+        <div class="container">
+            <div class="row">
+                <h1 class="h-font">About Us</h1>
+                <div class="col-lg-4">
+                    <div class="circle">
+                        <img src="assets/profilepic.jpg" class="img-fluid" alt="Profile Picture">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row textbox d-flex align-items-center">
+                        <h3 class="h-font">Hello There!</h3>
+                        <h4 class="h-font">Ourselves Shreyas(202211081) and Suryansh(202211093). We are humble
+                            students of the batch 2022 of Indian Institue of Information Technology Vadodara ICD.
+                        </h4>
+                        <h4 class="h-font">This is our DBMS project in which we have used MySQL to create a Hospital
+                            Management System. We have used HTML CSS and Bootstrap as our front-end and python and
+                            MySQL as our backend and database management tools.</h4>
+                        <h4 class="h-font">In this project we have implemented simple functionalities such as
+                            insert, update and delete, but we plan to make it much more polished and feature-rich as
+                            we spend some more time refining it. Till then keep trying this and follow us to be
+                            posted on different features we implement in this website.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-overlay">
+        <h2 id="reach-us" class="mt-3 pt-4 mb-4 text-center fw-bold h-font">REACH US</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 p-4 mb-lg-0 mb-3 bg-white rounded">
+                    <iframe class="w-100 rounded"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.795843531149!2d70.938893!3d20.718513299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be31d322e444609%3A0x77ec7c0f229a6f5b!2sIIIT-Vadodara%20-%20International%20Campus%20Diu%20(IIITV-ICD)!5e0!3m2!1sen!2sin!4v1712174493153!5m2!1sen!2sin"
+                        height="320px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="bg-white p-4 rounded mb-4">
+                        <h5>Call Us</h5>
+                        <i class="bi bi-telephone-fill"></i>
+                        <a href="tel: +919833740280" class="d-inline-block mb-2 text-decoration-none text-dark">+91
+                            98337
+                            40280</a>
+                        <br>
+                        <i class="bi bi-telephone-fill"></i>
+                        <a href="tel: +919433369696" class="d-inline-block mb-2 text-decoration-none text-dark">+91
+                            94333
+                            69696</a>
+                    </div>
+                    <div class="bg-white p-4 rounded mb-4">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="d-inline-block mb-3">
+                            <span class="badge bg-light text-dark fs-6 p-2">
+                                <i class="bi bi-twitter me-1"></i>Twitter
+                            </span>
+                        </a>
+                        <br>
+                        <a href="#" class="d-inline-block mb-3">
+                            <span class="badge bg-light text-dark fs-6 p-2">
+                                <i class="bi bi-instagram me-1"></i>Instagram
+                            </span>
+                        </a>
+                        <br>
+                        <a href="#" class="d-inline-block mb-3">
+                            <span class="badge bg-light text-dark fs-6 p-2">
+                                <i class="bi bi-facebook me-1"></i>Facebook
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-overlay">
+        <div class="container-fluid bg-white mt-5">
+            <div class="row">
+                <div class="col-lg-4 p-4">
+                    <h3 class="h-font fw-bold fs-3 mb-2">HMS-Vitality Vanguard</h3>
+                    <p>
+                        Two humble guys trying to make something with the resources that they have as well as expanding upon their resource pool to implement new features in this hospital management system.
+                        <br><br>
+                        Follow Us to be posted with the lastest additions and updates on this website!!
+                    </p>
+                </div>
+                <div class="col-lg-4 p-4">
+                    <h5 class="mb-3">Links</h5>
+                    <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a><br>
+                    <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">About</a><br>
+                    <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Services</a><br>
+                    <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Blogs and
+                        Testimonials</a><br>
+                    <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Contact Us</a><br>
+                </div>
+                <div class="col-lg-4 p-4">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
+                        <i class="bi bi-twitter me-1"></i>Twitter
+                    </a><br>
+                    <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
+                        <i class="bi bi-instagram me-1"></i>Instagram
+                    </a><br>
+                    <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
+                        <i class="bi bi-facebook me-1"></i>Facbook
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="text-center bg-dark text-white p-3 m-0">Designed by Shreyas 202211081 <br> Developed by Suryansh 202211093</h6>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

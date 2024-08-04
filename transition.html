@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMS-Vitality Vanguard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('assets/background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            opacity: 1;
+        }
+
+        .navbar {
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-overlay {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .h-font {
+            font-family: 'Merienda', cursive;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px; /* Increased spacing between buttons */
+            max-width: 600px;
+            justify-content: center;
+            align-items: center; /* Center buttons horizontally */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #343a40;
+            border-color: #343a40;
+            padding: 20px; /* Padding on all sides */
+            font-size: 1.5rem; /* Larger font size */
+            border-radius: 20px; /* Increased border-radius for rounded corners */
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: 300px; /* Fixed width for the buttons */
+            text-align: center; /* Center text horizontally */
+        }
+
+        .btn-primary:hover {
+            background-color: #23272b;
+        }
+
+        .btn-primary:focus,
+        .btn-primary.focus {
+            background-color: #23272b;
+            box-shadow: 0 0 0 0.25rem rgba(52, 58, 64, 0.5);
+        }
+
+        .btn-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .textbox {
+            margin-right: 0;
+        }
+
+        .textbox h3,
+        .textbox h4 {
+            margin-bottom: 10px;
+        }
+
+        .circle img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .nav-item {
+                display: inline-block;
+            }
+
+            .navbar-collapse {
+                justify-content: center;
+            }
+
+            .form-overlay {
+                padding: 15px;
+            }
+
+            .btn-container {
+                flex-direction: column;
+                gap: 20px;
+                max-width: 100%;
+            }
+
+            .btn-primary {
+                padding: 15px 30px;
+                font-size: 1.2rem;
+                width: auto; /* Auto width for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index_final.html">HMS-Vitality Vanguard</a>
+        </div>
+    </nav>
+
+    <div class="btn-wrapper">
+        <div class="btn-container">
+            <a href="INSERT/insert_department.html" class="btn btn-primary">Department</a>
+            <a href="INSERT/insert_doctor.html" class="btn btn-primary">Doctor</a>
+            <a href="INSERT/insert_patient_final.html" class="btn btn-primary">Patient</a>
+            <a href="INSERT/insert_prescription.html" class="btn btn-primary">Prescription</a>
+            <a href="DETAILS/medicine_details.html" class="btn btn-primary">Statistics</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
